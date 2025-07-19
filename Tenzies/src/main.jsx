@@ -104,6 +104,12 @@ export default function Main() {
                 >
                     {!gameWon ? "Roll Dice" : "New Game"}
                 </button>
+                {
+                    gameWon && <div className="win-message animate-win">
+                        🎉 You won! Great job! 🎉
+                    </div>
+
+                }
             </main>
 
 

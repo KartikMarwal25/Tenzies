@@ -103,3 +103,18 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.animate-win {
+  animation: pop 1s ease-out infinite alternate;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+

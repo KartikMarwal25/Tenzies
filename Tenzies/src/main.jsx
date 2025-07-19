@@ -77,6 +77,22 @@ export default function Main() {
     return (
         <>
             <Timer gameWon={gameWon} resetTrigger={resetTrigger} hasStarted={hasStarted} />
+            <video
+                className="background-video"
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{
+                    width: `${windowSize.width}px`,
+                    height: `${windowSize.height}px`
+                }}
+            >
+                <source src="/bg-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+
             <main>
                 {gameWon && <Confetti width={windowSize.width} height={windowSize.height} />}
                 <div aria-live="polite" className="sr-only">
